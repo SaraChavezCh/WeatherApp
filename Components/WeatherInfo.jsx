@@ -61,11 +61,10 @@ const WeatherInfo = () => {
   return (
     <div className="container" id="bg">
       {/* Temperature */}
-      <div className="main">
       <h1 className="temperature">
         {isCelsius ? `${celsius}${'°'}` : `${fahrenheit}${'°'}`}
       </h1>
-      </div>
+      
 
       <div className="imgContainer">
       <img

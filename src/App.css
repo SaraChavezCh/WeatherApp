@@ -1,24 +1,27 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  box-sizing: border-box;
 }
 
+.App {
+  width: 300px; 
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-  .App{
-    width: 800px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2rem;
-    /* background-color: #646cff; */
-
-  }
-  
-  button {
-    border-radius: 8px;
+#bg {
+  padding: 3rem 1rem 1rem 1rem;
+  border-radius: 2rem;
+  height: 100%;
+  width: 100%;
+}
+button {
+  margin-top: 1rem;
+  border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -29,140 +32,127 @@
   transition: border-color 0.25s;
   color: rgb(209, 208, 225);
   font-weight: 600;
-  
 }
 button:hover {
   border-color: whitesmoke;
 }
-
-#bg{
-  /* border: .3rem rgba(0, 0, 0, 0.582) solid; */
-  border-radius: 2rem;
-  height: 100%;
-  width: 100%;
-  background-color: #324b4b7e;
-  /* background-image: url(../src/assets/images/sun.jpg); */
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .temperature {
-  margin: 0 auto;
-  color: black;
-  
-  
-}
-.main{
-  /* color: black; */
-  padding-top: 2rem;
   font-size: 3rem;
-  width: 100%;
-  height: 10rem;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  margin: 0 auto;
-  /* background-color: aquamarine; */
-  
+  margin: 2rem 2rem 1rem 3rem;
+  color: black;
 }
 
-.imgContainer{
+.imgContainer {
   background-color: rgba(31, 75, 75, 0.486);
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
-.description{
+.description {
   margin-top: 1rem;
-  color: white;
-  background-color: #95b1b07f ;
+  background-color: #95b1b07f;
   border-radius: 2rem;
   display: block;
   color: black;
   font-size: 18px;
 }
-#location{
+#location {
   color: rgba(255, 0, 0, 0.676);
 }
-.otherInfo{
-  /* background-color: #646cff; */
-  width: 100%;
-  height: 5rem;
-  display: flex;
-  flex-direction: row;
-    column-gap: 6rem;
-    justify-content: center;
-    background-color: #95b1b07f;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
-    color: black;
-}
-small{
-  margin-top: 2rem;
-  font-size: 20px;
-}
-#max{
-  color: orangered;
-}
-#min{
-  color: #646cff;
-}
-#hum{
-  color: aqua;
-}
-.country{
+.country {
   background-color: #95b1b07f;
   border-radius: 1rem;
-    height: 2.5rem;
-    color: black;
-    padding-top: 10px;
+  height: 2.5rem;
+  color: black;
+  padding-top: 10px;
 }
+.otherInfo {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #95b1b07f;
+  border-radius: 1rem;
+  color: black;
+}
+small {
+  font-size: 20px;
+}
+#max {
+  color: orangered;
+}
+#min {
+  color: #646cff;
+}
+#hum {
+  color: aqua;
+}
+
 /* change backgrounds */
-.Clouds{
+.Clouds {
   background-image: url(../src/assets/images/cloudy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.CloudsBody{
-  background: linear-gradient(45deg, black, #03a9f46e)
+.CloudsBody {
+  background: linear-gradient(45deg, black, #03a9f46e);
 }
 
-
-.Rain{
+.Rain {
   background-image: url(../src/assets/images/rainy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.RainBody{
-  background: linear-gradient(45deg, rgb(26, 26, 26), rgb(157, 230, 108))
+.RainBody {
+  background: linear-gradient(45deg, rgb(26, 26, 26), rgb(157, 230, 108));
 }
 
-
-.Snow{
+.Snow {
   background-image: url(../src/assets/images/snow.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.SnowBody{
-  background: linear-gradient(45deg, rgb(243, 245, 245), rgb(157, 230, 108))
+.SnowBody {
+  background: linear-gradient(45deg, rgb(243, 245, 245), rgb(157, 230, 108));
 }
 
-
-.Clear{
+.Clear {
   background-image: url(../src/assets/images/sunny.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.ClearBody{
-  background: linear-gradient(45deg, rgb(50, 51, 51), rgb(157, 230, 108))
+.ClearBody {
+  background: linear-gradient(45deg, rgb(50, 51, 51), rgb(157, 230, 108));
 }
 
-
-.Thunderstorm{
+.Thunderstorm {
   background-image: url(../src/assets/images/thunderstorm.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.ThunderstormBody{
-  background: linear-gradient(45deg, rgb(10, 18, 77), rgb(242, 244, 241))
+.ThunderstormBody {
+  background: linear-gradient(45deg, rgb(10, 18, 77), rgb(242, 244, 241));
+}
+
+@media screen and (min-width:768px){
+  .App {
+    width: 500px; 
+    
+  }
+}
+@media screen and (min-width:1024px){
+  .App {
+    width: 800px; 
+    
+  }
+}
+@media screen and (min-width:1440px){
+  .App {
+    width: 900px; 
+    
+  }
 }
